@@ -3,6 +3,6 @@ Robust Optimal Autopilot Design for Hypersonic Reentry Thrust Vector Control of 
 <br />
 <br />
 <p align="center">
-  <img src="Gimbaled_thrust_animation.gif" width="450px" height="388px">
+  <img src="Gimbaled_thrust_animation.gif" width="435px" height="375px">
 </p>
 
