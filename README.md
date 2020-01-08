@@ -1,5 +1,5 @@
 # Rocket-Controls
-__Robust Optimal Autopilot Design for Hypersonic Reentry Thrust Vector Control of Rockets__
+Robust Optimal Autopilot Design for Hypersonic Reentry Thrust Vector Control of Rockets
 <br />
 <br />
 <p align="center">
