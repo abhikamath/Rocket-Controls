@@ -4,6 +4,5 @@ Robust Optimal Autopilot Design for Hypersonic Reentry Thrust Vector Control of 
 <br />
 <p align="center">
   <img src="Gimbaled_thrust_animation.gif" width="435px" height="375px">
-  [Source: grc.nasa.gov](https://www.grc.nasa.gov/WWW/K-12/rocket/gimbaled.html)
 </p>
-
+[Source: grc.nasa.gov](https://www.grc.nasa.gov/WWW/K-12/rocket/gimbaled.html)
