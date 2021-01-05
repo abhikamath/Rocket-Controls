@@ -12,7 +12,7 @@ s = tf('s');
 % Plant TF, 'Gp'
 Gp = zpk(minreal(C/s^2))
 
-% These values were obtained from the auto-tuning the PID controller in Simulink
+% These values were obtained by auto-tuning the PID controller in Simulink
 P = 0.825493884458449;
 I = 0.0468147782797737;
 D = 5.24517904929436;
