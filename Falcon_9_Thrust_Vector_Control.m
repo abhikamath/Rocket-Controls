@@ -70,4 +70,3 @@ TF = ((K*C)*(tz*s + 1))/((s^2 + 2*Z*Wn*s + Wn^2)*(tp*s + 1))
 dTF = diff(TF,s)
 eqn = subs(dTF,s,0) == 0;
 tz = solve(eqn,tz)
-
