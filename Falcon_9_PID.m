@@ -2,10 +2,10 @@
 
 % Constants & Design Parameters
 
-h3 = 10; % Distance between the Center of Gravity of the Rocket & the Gimbaled Merlin 1D Engine in consideration (meters) 
-T = 845.22 * 10^3; % Thrust of a Falcon 9 FT Stage 1 Merlin 1D Engine (Newtons)
-J = 37576837; % Moment of Inertia of the Falcon 9 about the vertical axis (Assumption: Cylindrical Body)
-C = (h3*T)/J; % Constant
+h3 = 10; % distance between the center of gravity of the rocket & the gimbaled Merlin 1D engine in consideration (meters) 
+T = 845.22 * 10^3; % thrust of a Falcon 9 FT stage 1 Merlin 1D engine (Newtons)
+J = 37576837; % moment of inertia of the Falcon 9 about the vertical axis (assumption: cylindrical body)
+C = (h3*T)/J; % constant
 
 s = tf('s');
 
