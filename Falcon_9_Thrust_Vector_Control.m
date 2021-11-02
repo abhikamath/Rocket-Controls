@@ -4,15 +4,15 @@ s = tf('s');
 
 % Constants & Design Parameters
 
-h3 = 10; % Distance between the Center of Gravity of the Rocket & the Gimbaled Merlin 1D Engine in consideration (meters) 
-T = 845.22 * 10^3; % Thrust of a Falcon 9 FT Stage 1 Merlin 1D Engine (Newtons)
-J = 37576837; % Moment of Inertia of the Falcon 9 about the vertical axis (Assumption: Cylindrical Body)
-C = (h3*T)/J; % Constant
-Wn = 0.85; % Natural Frequency of the Control System
-K = (Wn^2)/C; % Controller Gain
-Z = 2^-0.5; % Damping Ratio ?
-tp = 1/(10*Wn); % Time Constant of the added pole 
-tz = (20*2^(1/2))/17 + 2/17; % Time Constant of the added pole (to satisfy the 2nd interpolation condition (shown later))
+h3 = 10; % distance between the center of gravity of the rocket & the gimbaled Merlin 1D engine in consideration (meters) 
+T = 845.22 * 10^3; % thrust of a Falcon 9 FT stage 1 Merlin 1D engine (Newtons)
+J = 37576837; % moment of inertia of the Falcon 9 about the vertical axis (assumption: cylindrical body)
+C = (h3*T)/J; % constant
+Wn = 0.85; % natural frequency of the control system
+K = (Wn^2)/C; % controller gain
+Z = 2^-0.5; % damping ratio
+tp = 1/(10*Wn); % time constant of the added pole 
+tz = (20*2^(1/2))/17 + 2/17; % time constant of the added pole (to satisfy the 2nd interpolation condition (shown later))
 
 % Plant TF, 'Gp'
 Gp = zpk(minreal(C/s^2))
@@ -55,14 +55,14 @@ legend('Y','S','T');
 % (multiplicity ap = 2) in the plant at s = 0; k = ap - 1) -> 2nd
 % interpolation condition
 
-h3 = 10; % Distance between the Center of Gravity of the Rocket & the Gimbaled Merlin 1D Engine in consideration (meters) 
-T = 845.22 * 10^3; % Thrust of a Falcon 9 FT Stage 1 Merlin 1D Engine (Newtons)
-J = 37576837; % Moment of Inertia of the Falcon 9 about the vertical axis (Assumption: Cylindrical Body)
-C = (h3*T)/J; % Constant
-Wn = 0.85; % Natural Frequency of the Control System
-K = Wn^2/C; % Controller Gain
-Z = 2^-0.5; % Damping Ratio ?
-tp = 1/(10*Wn); % Time Constant of the added pole 
+h3 = 10; % distance between the center of gravity of the rocket & the gimbaled Merlin 1D engine in consideration (meters) 
+T = 845.22 * 10^3; % thrust of a Falcon 9 FT stage 1 Merlin 1D engine (Newtons)
+J = 37576837; % moment of inertia of the Falcon 9 about the vertical axis (assumption: cylindrical body)
+C = (h3*T)/J; % constant
+Wn = 0.85; % natural frequency of the control system
+K = Wn^2/C; % controller gain
+Z = 2^-0.5; % damping ratio
+tp = 1/(10*Wn); % time constant of the added pole
 
 syms s tz
 
