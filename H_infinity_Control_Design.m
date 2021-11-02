@@ -63,6 +63,3 @@ legend('Wp','S','location','southeast')
 figure(4)
 bodemag(T,S,1/Wd)
 legend('T','S','1/Wd','location','southeast')
-
-
-
