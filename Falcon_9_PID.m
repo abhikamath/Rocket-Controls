@@ -32,8 +32,8 @@ S_stability = isstable(S)
 GpS_stability = isstable(GpS)
 
 M2 = 1/getPeakGain(S) % M2-margin
-BW = bandwidth(T) % Bandwidth of the closed-loop
-AE = getPeakGain(Y) % Maximum actuator effort
+BW = bandwidth(T) % bandwidth of the closed-loop
+AE = getPeakGain(Y) % maximum actuator effort
 
 figure(1)
 bodemag(Y, S, T);
