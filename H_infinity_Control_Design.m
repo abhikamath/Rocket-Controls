@@ -1,4 +1,4 @@
-%% H? Control Design
+%% H-infinity Optimization-based Control Design
 
 % Courtesy of Professor Francis Assadian & TA Kevin Mallon
 
